@@ -15,9 +15,6 @@ export default function AboutPage() {
                         La soddisfazione dei clienti è al centro del nostro progetto: per questo puntiamo su semplicità, trasparenza e assistenza continua.
                         Che tu stia cercando un nuovo outfit o un dispositivo tecnologico, sul nostro shop troverai prodotti adatti a ogni esigenza.
                         Grazie per aver scelto di far parte della nostra community!
-
-
-
                     </p>
                     <button className="btn btn-primary btn-lg" type="button">
                         Shop
@@ -28,3 +25,5 @@ export default function AboutPage() {
         </>
     )
 }
+
+
