@@ -1,11 +1,8 @@
-import AppFooter from "../components/AppFooter";
-import AppHeader from "../components/AppHeader";
-
 export default function AboutPage() {
 
     return (
         <>
-            <AppHeader />
+
             <div className="p-5 mb-4 bg-light rounded-3">
                 <div className="container-fluid py-5">
                     <h1 className="display-5 fw-bold">Custom hero section</h1>
@@ -27,7 +24,7 @@ export default function AboutPage() {
                     </button>
                 </div>
             </div>
-            <AppFooter />
+
         </>
     )
 }
