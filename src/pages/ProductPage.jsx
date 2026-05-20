@@ -17,7 +17,7 @@ export default function ProductPage() {
             .then(data => setProduct(data))
             .catch(err => {
                 console.error(err)
-                navigate(-1)
+                navigate('/notfound')
             })
 
     }, [])
