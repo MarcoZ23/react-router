@@ -1,21 +1,26 @@
-import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useEffect, useState, } from "react"
+import { useNavigate, useParams } from "react-router-dom"
 
-export default function SingleProductPage() {
+export default function ProductPage() {
 
 
     const { id } = useParams()
 
     const api_url = `https://fakestoreapi.com/products/${id}`
     const [product, setProduct] = useState([])
+    const navigate = useNavigate()
 
     useEffect(() => {
 
         fetch(api_url)
             .then(res => res.json())
             .then(data => setProduct(data))
-            .catch(err => console.error(err))
-    })
+            .catch(err => {
+                console.error(err)
+                navigate(-1)
+            })
+
+    }, [])
 
     return (
 
